@@ -1,21 +1,42 @@
 # Reynolds (Group 5)
 
 ## Team Members
+
 Yulin Zhao (yulin6)
 Siqi Du (siqidu3)
 ShunTat Lam (stlam2)
 Huiqian Jing (hjing6)
 
 ## Problem Statements
-The group 5’s project aims to construct a neural network model to predict the gasoline price in the near future based on historical data, e.g. the next week. The network will intake government-issued chronological imports & outputs data of multiple types of oil and oil products from the 1980s to the 2020s as features, and gasoline prices as the label. The team hopes to use this model as an assistant tool in answering the increasing pressure of skyrocketing gas prices that American families are facing, by providing a reference for economic decisions.
+
+The group 5’s project aims to construct a neural network model to predict the gasoline price in the near future based on historical data, e.g. the next week. The network will intake government-issued chronological imports & outputs data of multiple types of oil and oil products from the 1980s to the 2020s as features, and gasoline prices as the label. The team hopes to use this model as an assistant tool in answering the increasing pressure of skyrocketing gas prices that American families are facing, by providing a reference for economic decisions. The team will also try to build a RNN model to predict the prices of future several weeks, providing further information for economic decisions.
 
 ## File System Explanation
- - test2.ipynb: the notebook for data loading and cleaning. 
- - test_dataset: the debugging dataset (small)
- - working_dataset: the working_dataset (complete, large)
- - readme.md: the documentation
+
+Datasets:
+
+- Datasets Folder
+  - EMM_EPM0_PTE_NUS_DPGw.xlsx: the dataset contained prices
+  - EMM_EPM0_PTE_NUS_DPGw.csv: the dataset contained prices
+    - PET_MOVE_WKLY_DC_NUS-Z00_MBBLPD_W.xlsx: the dataset contained all features
+    - PET_MOVE_WKLY_DC_NUS-Z00_MBBLPD_W_1.csv: the dataset contained the first part of features
+    - PET_MOVE_WKLY_DC_NUS-Z00_MBBLPD_W_2.csv: the dataset contained the second part of features
+    - PET_MOVE_WKLY_DC_NUS-Z00_MBBLPD_W_3.csv: the dataset contained the third part of features
+- test_dataset.pkl: the debugging dataset (small)
+- working_dataset.pkl: the working_dataset (complete, large)
+
+Codes:
+
+- ETL.ipynb: the notebook for data loading and cleaning.
+- EDA.ipynb: the notebook for exploratary data analysis.
+- baseline.ipynb: the notebook for the baseline performance (linear regression)
+
+Others:
+
+- readme.md: the documentation
 
 ## License:
+
 MIT License
 
 Copyright (c) [2022] [Reynolds]
