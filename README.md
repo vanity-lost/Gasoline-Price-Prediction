@@ -9,7 +9,9 @@ Huiqian Jing (hjing6)
 
 ## Problem Statements
 
-The group 5’s project aims to construct a neural network model to predict the gasoline price in the near future based on historical data, e.g. the next week. The network will intake government-issued chronological imports & outputs data of multiple types of oil and oil products from the 1980s to the 2020s as features, and gasoline prices as the label. The team hopes to use this model as an assistant tool in answering the increasing pressure of skyrocketing gas prices that American families are facing, by providing a reference for economic decisions. The team will also try to build a RNN model to predict the prices of future several weeks, providing further information for economic decisions.
+The group 5’s project aims to construct a neural network model to predict the gasoline price in the near future based on historical data, e.g. the next four weeks. The network will intake government-issued chronological imports & outputs data of multiple types of oil and oil products from the 1980s to the 2020s as features, and gasoline prices as the label. The team hopes to use this model as an assistant tool in answering the increasing pressure of skyrocketing gas prices that American families are facing, by providing a reference for economic decisions.
+
+In other words, our model will use the data of the past 12 weeks (3 months) to predict the future 4 weeks (one month).
 
 ## File System Explanation
 
@@ -30,6 +32,7 @@ Codes:
 - ETL.ipynb: the notebook for data loading and cleaning.
 - EDA.ipynb: the notebook for exploratary data analysis.
 - baseline.ipynb: the notebook for the baseline performance (linear regression)
+- model.ipynb: the notebook for implementing RNN model using different batch strategies, optimizers and hyperparameters
 
 Others:
 
